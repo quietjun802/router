@@ -7,10 +7,12 @@ import Board from './pages/Board'
 import Home from './pages/Home'
 import Notfound from './pages/Notfound'
 import BoardDetail from './pages/BoardDetail'
+import Footer from './components/Footer'
+
 function App() {
 
   return (
-    <div>
+    <div>=
       <Nav/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -19,7 +21,7 @@ function App() {
         <Route path='/board/:id' element={<BoardDetail/>}/>
         <Route path='*' element={<Notfound/>}/>
       </Routes>
-
+    <Footer/>
     </div>
   )
 }
