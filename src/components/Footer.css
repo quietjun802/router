@@ -1,5 +1,11 @@
 footer {
     background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    padding:  20px;
+}
+footer h2{
+    text-transform: uppercase;
 }
 footer *{
     color: #fff;

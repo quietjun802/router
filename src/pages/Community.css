@@ -1,0 +1,80 @@
+.Community {
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+
+.Community .list {
+    list-style: none;
+    margin: 16px 0;
+    padding: 0;
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.Community .list li {
+    border: 3px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease, background .12s ease;
+}
+
+
+.Community .list li a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px;
+    min-height: 140px;
+    text-decoration: none;
+    color: #111827;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.Community .num {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #f3f4f6;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    transition: background .12s ease, color .12s ease, border-color .12s ease;
+}
+
+
+.Community .dsc {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.Community .list li:hover {
+    background: #1f2937;
+    border-color: #334155;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    transform: translateY(-2px);
+}
+
+.Community .list li:hover .num {
+    background: #ffffff;
+    color: #111827;
+    border: 1px solid #93c5fd;
+}
+
+.Community .list li:hover .dsc {
+    color: #ffffff;
+}
