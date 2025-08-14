@@ -14,7 +14,7 @@ import CommunityDetail from './pages/CommunityDetail'
 function App() {
 
   return (
-    <div>=
+    <div>
       <Nav/>
       <Routes>
         <Route path='/' element={<Home/>}/>
